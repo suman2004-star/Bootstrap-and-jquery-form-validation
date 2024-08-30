@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Form</title>
+  
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.0/jquery-ui.js"></script>
+   
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2 class="mb-4">Registration Form</h2>
+        <form id="form">
+            <div class="form-row">
+                <div class="form-group col-sm-6">
+                    <label for="firstName">First Name</label>
+                    <input type="text" class="form-control" id="firstName" placeholder="First Name">
+                    <span class="error" id="First-Name-error"></span>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" class="form-control" id="lastName" placeholder="Last Name">
+                    <span class="error" id="last-Name-error"></span>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Email">
+                    <span class="error" id="email-error"></span>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" class="form-control" id="phone" placeholder="Phone Number">
+                    <span class="error" id="phone-error"></span>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" class="form-control" id="dob" placeholder="MM/DD/YYYY">
+                    <span class="error" id="date-error"></span>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="state">State</label>
+                    <select id="state" class="form-control">
+                        <option selected>Choose...</option>
+                      
+                    </select>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="district">District</label>
+                    <select id="district" class="form-control">
+                        <option selected>Choose...</option>
+                       
+                    </select>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="pincode">Pincode</label>
+                    <input type="text" class="form-control" id="pincode" placeholder="Pincode">
+                    <span class="error" id="pincode-error"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="address">Address</label>
+                <textarea class="form-control" id="address" rows="3" placeholder="Address"></textarea>
+                <span class="error" id="address-error"></span>
+            </div>
+            <button type="submit" class="btn btn-danger">Submit</button>
+        </form>
+    </div>
+
+   
+   <script src="main.js"></script>
+</body>
+</html>
